@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Flash Cards App</title>
+    <link rel="stlyesheet" href=flash_cards.css">
+  </head>
+
+  <body>
+    <h1> Welcome to the Flash Cards App! </h1>
+    <hr />
+    <h3> Start by adding some cards.</h3>
+    <p> (Up to five) </p>
+      <div id="newCard'>
+      <form id="newForm">
+          <input id="newTerm" type='text' placeholder="Input Term">
+          <input id="newDef" type='text' placeholder="Input Definition">
+          <button onclick="addCard()"> Add A Card </button>
+        </form>
+      </div>
+    <hr />
+    
+    <h1> Here are the current cards </h1>  
+
+    <p id="card"></p>
+    <button onclick="flip()">Answer</button>
+
+
+    <script src="flash_cards.js"></script>
+  </body>
+</html>
